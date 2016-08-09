@@ -52,7 +52,7 @@ des résolutions allant du 800x600 au 1920x1080, au format 4:3 5:4 16:10 et 16:9
 ## Project Timeline
 
 * Début du projet crowdfunding : 26/07/2016
-* Echéance Ã©tude prÃ©liminaire : 10/08/2016
+* Echéance étude préliminaire : 10/08/2016
 * Echéance projet crowdfunding : 20/09/2016
 * Temps total : 8 semaines
 * Temps étude préliminaire : 2 semaines
