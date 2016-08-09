@@ -1,4 +1,4 @@
-% Etude préliminaire du projet Crowdfunding
+% Etude préliminaire du projet Greenlight
 % Guillaume JOOP
 % 09/08/2016
 
@@ -44,7 +44,8 @@ Universal Windows Platform espéré)
 * Langage de programmation : HTML5, PHP 5.6, CSS3, javascript, SQL, markdown
 * Logiciels utilisés : NetBeans pour le développement web et le versioning,
 xampp pour le déploiement sur serveur et la base de données, pandoc pour la
-conversion du markdown en pdf
+conversion du markdown en pdf, MySQL Workbench pour la création du schéma
+entité/association
 * Résolution : utilisation uniquement "desktop" pour commencer, optimisé pour
 des résolutions allant du 800x600 au 1920x1080, au format 4:3 5:4 16:10 et 16:9
 (autre résolutions et formats impossible a tester faute de matériel)
@@ -60,7 +61,7 @@ des résolutions allant du 800x600 au 1920x1080, au format 4:3 5:4 16:10 et 16:9
 
 | Période                                       | Tâche                                                                 |
 |-----------------------------------------------|-----------------------------------------------------------------------|
-| Semaines 1 & 2 (du 26 /07/2016 au 09/08/2016) | Rédaction de l'étude préliminaire.                                    |
+| Semaines 1 & 2 (du 26 /07/2016 au 09/08/2016) | Rédaction de l'étude préliminaire ; Mise en place du dépôt GitHub.    |
 | Semaine 3 (du 10/08/2016 au 16/08/2016)       | Création de la base de données.                                       |
 | Semaine 4 (du 17/08/2016 au 22/08/2016)       | Page d'accueil, d'inscription et de connexion.                        |
 | Semaine 5 (du 23/08/2016 au 29/08/2016)       | Page de projet et de don ; CSS.                                       |
@@ -70,4 +71,60 @@ des résolutions allant du 800x600 au 1920x1080, au format 4:3 5:4 16:10 et 16:9
 
 # Site Structure
 
-## 
+## Content/Functionality Outline
+
+* Page d'accueil :
+    + Accés à la base de données
+    + Lien vers page de connexion
+    + Lien vers page d'inscription
+    + Projet à la une
+    + Projets récents
+    + Projets populaires
+* Page d'inscription :
+    + Accés à la base de données
+    + Formulaire :
+        - Association :
+            + login
+            + password
+            + e-mail
+            + Nom d'association
+            + Numéro d'association
+            + Adresse
+            + Numéro de téléphone
+            + Site web (facultatif)
+            + Données bancaires
+        - Particulier :
+            + login
+            + password
+            + email
+            + Nom (facultatif)
+            + Prénom (facultatif)
+            + Numéro de téléphone (facultatif)
+            + Adresse (facultatif)
+            + Date de naissance (facultatif)
+            + Sexe (facultatif)
+            + Données bancaires
+* Page de connexion :
+    + Accés à la base de données
+    + Formulaire :
+        - login
+        - password
+* Page de projet :
+    + Accés à la base de données
+    + Un projet sera composé de :
+        - Un nom
+        - L'association créatrice
+        - Une image/une vidéo de présentation
+        - Une description
+        - La date de mise en ligne
+        - La somme acquise
+        - Deux flux en temps réel :
+            * Un "newsfeed" alimenté par l'association
+            * Les promesses de dons effectués accompagné du nom d'utilisateur si
+identifié et d'un commentaire facultatif
+    + Les autres projets de l'association et/ou les projets similaires
+
+
+## Database Diagram
+
+![Diagramme de la BDD associé à Greenlight](db_diagram.png "Diagramme de la BDD associé à Greenlight")
