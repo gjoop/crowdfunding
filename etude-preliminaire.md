@@ -11,7 +11,7 @@ financement participatif permettant a des associations caritatives de proposer
 un espace de dons en ligne
 * Objectif spécifique à l'utilisateur enregistré :
     + Administrateurs :
-        - Valider les demandes d'associations apres vérification de projet
+        - Valider les demandes d'associations aprés vérification de projet
 non frauduleux
         - Valider les promesses aprés vérification de don non farfelu
         - Elire modérateur
@@ -40,10 +40,10 @@ d'effectuer ces dons.
 ## Initial Tech Specs
 
 * Navigateur : Mozilla Firefox, Google Chrome, Microsoft Edge (compatibilité
-universal windows platform espéré)
+Universal Windows Platform espéré)
 * Langage de programmation : HTML5, PHP 5.6, CSS3, javascript, SQL, markdown
 * Logiciels utilisés : NetBeans pour le développement web et le versioning,
-xampp pour le déploiement sur serveur et la base de donnée, pandoc pour la
+xampp pour le déploiement sur serveur et la base de données, pandoc pour la
 conversion du markdown en pdf
 * Résolution : utilisation uniquement "desktop" pour commencer, optimisé pour
 des résolutions allant du 800x600 au 1920x1080, au format 4:3 5:4 16:10 et 16:9
@@ -52,7 +52,7 @@ des résolutions allant du 800x600 au 1920x1080, au format 4:3 5:4 16:10 et 16:9
 ## Project Timeline
 
 * Début du projet crowdfunding : 26/07/2016
-* Echéance étude préliminaire : 10/08/2016
+* Echéance Ã©tude prÃ©liminaire : 10/08/2016
 * Echéance projet crowdfunding : 20/09/2016
 * Temps total : 8 semaines
 * Temps étude préliminaire : 2 semaines
