@@ -58,29 +58,15 @@ des résolutions allant du 800x600 au 1920x1080, au format 4:3 5:4 16:10 et 16:9
 * Temps étude préliminaire : 2 semaines
 * Temps projet : 6 semaines
 
---------------------------------------- ----------------------------------------
-Période                                 Tâches
---------------------------------------- ----------------------------------------
-
-Semaines 1 & 2 (du 26/07/2016 au        Rédaction de l'étude préliminaire.
-09/08/2016)
-
-Semaine 3 (du 10/08/2016 au 16/08/2016) Création de la base de données.
-
-Semaine 4 (du 17/08/2016 au 22/08/2016) Page d'accueil, d'inscription et de
-                                        connexion.
-
-Semaine 5 (du 23/08/2016 au 29/08/2016) Page de projet et de don ; CSS.
-
-Semaine 6 (du 30/08/2016 au 05/09/2016) Version utilisateur des pages ; CSS.
-
-Semaine 7 (du 06/09/2016 au 12/09/2016) Espace administrateur/modérateur ; Test
-                                        et ajout de fonctionnalitées.
-
-Semaine 8 (du 13/09/2016 au 19/09/2016) Test final ; Rédaction du rapport et
-                                        préparation oral.
-
---------------------------------------- ----------------------------------------
+| Période                                       | Tâche                                                                 |
+|-----------------------------------------------|-----------------------------------------------------------------------|
+| Semaines 1 & 2 (du 26 /07/2016 au 09/08/2016) | Rédaction de l'étude préliminaire.                                    |
+| Semaine 3 (du 10/08/2016 au 16/08/2016)       | Création de la base de données.                                       |
+| Semaine 4 (du 17/08/2016 au 22/08/2016)       | Page d'accueil, d'inscription et de connexion.                        |
+| Semaine 5 (du 23/08/2016 au 29/08/2016)       | Page de projet et de don ; CSS.                                       |
+| Semaine 6 (du 30/08/2016 au 05/09/2016)       | Version utilisateur des pages ; CSS.                                  |
+| Semaine 7 (du 06/09/2016 au 12/09/2016)       | Espace administrateur/modérateur ; Test et ajout de fonctionnalitées. |
+| Semaine 8 (du 13/09/2016 au 19/09/2016)       | Test final ; Rédaction du rapport et préparation oral.                |
 
 # Site Structure
 
