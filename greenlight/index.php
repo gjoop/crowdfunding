@@ -7,11 +7,12 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Greenlight</title>
+        <link rel="icon" type="image/png" href="media/favicon.png" />
     </head>
     <body>
         <?php
-        // put your code here
+            // put your code here
         ?>
     </body>
 </html>
