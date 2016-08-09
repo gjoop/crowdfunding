@@ -1,4 +1,4 @@
-% Etude préliminaire du projet Crowdfunding
+% Etude prÃ©liminaire du projet Crowdfunding
 % Guillaume JOOP
 % 09/08/2016
 
@@ -9,63 +9,63 @@
 * Objectif global : l'objectif du projet est de concevoir une plate-forme de
 financement participatif permettant a des associations caritatives de proposer
 un espace de dons en ligne
-* Objectif spécifique à l'utilisateur enregistré :
+* Objectif spÃ©cifique Ã  l'utilisateur enregistrÃ© :
     + Administrateurs :
-        - Valider les demandes d'associations apres vérification de projet
+        - Valider les demandes d'associations apres vÃ©rification de projet
 non frauduleux
-        - Valider les promesses aprés vérification de don non farfelu
-        - Elire modérateur
-    + Modérateurs :
-        - Modérer les différentes pages de dons (newsfeed, description, etc)
+        - Valider les promesses aprÃ©s vÃ©rification de don non farfelu
+        - Elire modÃ©rateur
+    + ModÃ©rateurs :
+        - ModÃ©rer les diffÃ©rentes pages de dons (newsfeed, description, etc)
     + Associations :
-        - Mettre en ligne son espace de dons et de le gérer
+        - Mettre en ligne son espace de dons et de le gÃ©rer
         - Communiquer sur l'avancement de son projet a travers un "newsfeed"
-        - Visualiser les différentes promesses de dons effectués
-        - Visualiser les dons déjà enregistrés ainsi que différentes
+        - Visualiser les diffÃ©rentes promesses de dons effectuÃ©s
+        - Visualiser les dons dÃ©jÃ  enregistrÃ©s ainsi que diffÃ©rentes
 statistiques (montant/mois, montant moyen/donation, etc...)
     + Particuliers :
-        - Enregister des infos personelles réutilisable pour de futurs dons
-        - Visualiser les promesses de dons effectuées
-        - Postuler en tant que modérateur
-* Objectif spécifique à l'utilisateur non-enregistré :
-    + Effectuer une promesse de don de manière simple et efficace
+        - Enregister des infos personelles rÃ©utilisable pour de futurs dons
+        - Visualiser les promesses de dons effectuÃ©es
+        - Postuler en tant que modÃ©rateur
+* Objectif spÃ©cifique Ã  l'utilisateur non-enregistrÃ© :
+    + Effectuer une promesse de don de maniÃ¨re simple et efficace
     + Pouvoir s'enregister (association ou particulier)
 
 ## Personas
 
-Le site est avant tout destiné aux associations carritative souhaitant proposé
+Le site est avant tout destinÃ© aux associations carritative souhaitant proposÃ©
 un espace de dons en ligne, mais aussi ouvert au grand public afin
 d'effectuer ces dons.
 
 ## Initial Tech Specs
 
-* Navigateur : Mozilla Firefox, Google Chrome, Microsoft Edge (compatibilité
-universal windows platform espéré)
+* Navigateur : Mozilla Firefox, Google Chrome, Microsoft Edge (compatibilitÃ©
+universal windows platform espÃ©rÃ©)
 * Langage de programmation : HTML5, PHP 5.6, CSS3, javascript, SQL, markdown
-* Logiciels utilisés : NetBeans pour le développement web et le versioning,
-xampp pour le déploiement sur serveur et la base de donnée, pandoc pour la
+* Logiciels utilisÃ©s : NetBeans pour le dÃ©veloppement web et le versioning,
+xampp pour le dÃ©ploiement sur serveur et la base de donnÃ©e, pandoc pour la
 conversion du markdown en pdf
-* Résolution : utilisation uniquement "desktop" pour commencer, optimisé pour
-des résolutions allant du 800x600 au 1920x1080, au format 4:3 5:4 16:10 et 16:9
-(autre résolutions et formats impossible a tester faute de matériel)
+* RÃ©solution : utilisation uniquement "desktop" pour commencer, optimisÃ© pour
+des rÃ©solutions allant du 800x600 au 1920x1080, au format 4:3 5:4 16:10 et 16:9
+(autre rÃ©solutions et formats impossible a tester faute de matÃ©riel)
 
 ## Project Timeline
 
-* Début du projet crowdfunding : 26/07/2016
-* Echéance étude préliminaire : 10/08/2016
-* Echéance projet crowdfunding : 20/09/2016
+* DÃ©but du projet crowdfunding : 26/07/2016
+* EchÃ©ance Ã©tude prÃ©liminaire : 10/08/2016
+* EchÃ©ance projet crowdfunding : 20/09/2016
 * Temps total : 8 semaines
-* Temps étude préliminaire : 2 semaines
+* Temps Ã©tude prÃ©liminaire : 2 semaines
 * Temps projet : 6 semaines
 
---------------------------------------------------------------------------------
-Période                                 Tâches
+--------------------------------------- ----------------------------------------
+PÃ©riode                                 TÃ¢ches
 --------------------------------------- ----------------------------------------
 
-Semaines 1 & 2 (du 26/07/2016 au        Rédaction de l'étude préliminaire.
+Semaines 1 & 2 (du 26/07/2016 au        RÃ©daction de l'Ã©tude prÃ©liminaire.
 09/08/2016)
 
-Semaine 3 (du 10/08/2016 au 16/08/2016) Création de la base de données.
+Semaine 3 (du 10/08/2016 au 16/08/2016) CrÃ©ation de la base de donnÃ©es.
 
 Semaine 4 (du 17/08/2016 au 22/08/2016) Page d'accueil, d'inscription et de
                                         connexion.
@@ -74,13 +74,13 @@ Semaine 5 (du 23/08/2016 au 29/08/2016) Page de projet et de don ; CSS.
 
 Semaine 6 (du 30/08/2016 au 05/09/2016) Version utilisateur des pages ; CSS.
 
-Semaine 7 (du 06/09/2016 au 12/09/2016) Espace administrateur/modérateur ; Test
-                                        et ajout de fonctionnalitées.
+Semaine 7 (du 06/09/2016 au 12/09/2016) Espace administrateur/modÃ©rateur ; Test
+                                        et ajout de fonctionnalitÃ©es.
 
-Semaine 8 (du 13/09/2016 au 19/09/2016) Test final ; Rédaction du rapport et
-                                        préparation oral.
+Semaine 8 (du 13/09/2016 au 19/09/2016) Test final ; RÃ©daction du rapport et
+                                        prÃ©paration oral.
 
---------------------------------------------------------------------------------
+--------------------------------------- ----------------------------------------
 
 # Site Structure
 
