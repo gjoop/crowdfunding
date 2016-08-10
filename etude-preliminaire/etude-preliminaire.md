@@ -124,11 +124,6 @@ des résolutions allant du 800x600 au 1920x1080, au format 4:3 5:4 16:10 et 16:9
             + Date de naissance (facultatif)
             + Sexe (facultatif)
             + Données bancaires
-
-
-\pagebreak
-
-
 * Page de projet :
     + Accés à la base de données
     + Connexion
@@ -148,7 +143,7 @@ des résolutions allant du 800x600 au 1920x1080, au format 4:3 5:4 16:10 et 16:9
 identifié et d'un commentaire facultatif
     + Les autres projets de l'association et/ou les projets similaires
 * Page de dons :
-    + Acc�s � la base de donn�es
+    + Accés à la base de données
     + Connexion
     + Lien vers page d'inscription
     + FAQ
@@ -156,7 +151,7 @@ identifié et d'un commentaire facultatif
     + Formulaire :
         - email
         - montant du don
-        - donn�es bancaires
+        - données bancaires
         - pseudo (facultatif)
         - commentaire court (facultatif)
 
@@ -172,34 +167,51 @@ identifié et d'un commentaire facultatif
 Remarque : La table bankAccount est a protéger car elle contiendra des infos
 trés sensible. Peut être à placé dans une base à part. Recherche sur la
 sécurisation et le cryptage des données a faire. De plus la double liaison
-� 'idAssociation' ET 'idUser' peut poser des problemes de requ�tes...
+à 'idAssociation' ET 'idUser' peut poser des problèmes de requêtes...
 
 
 Dans la table 'donation', le champ 'validé' est un booléen indiquant si la
 promesse de dons a été tenue
 
 
+#Visual design
+
+
+Les couleurs choisies sont le vert, le bleu et des nuances de gris. Le choix du logo
+s'est porté sur un feu tricolore dont le vert est illuminé (référence à "greenlight",
+feu vert en anglais). le squelette général est déjà défini mais amené a évolué.
+L'identité visuel final du site n'est pas clairement défini.
+
+## Advanced wireframe
+
+![page d'accueil du site](media/home.png)
+
+Plusieurs catégories, dons possible dès la page d'accueil. Footer non défini.
+
 \pagebreak
 
+![choix du type de compte](media/signup.png)
 
-## Wireframe
+Simple page a deux boutons (chacun redirigeant vers le formulaire correspondant).
 
+\pagebreak
 
-![home](media/home.png "page d'accueil du site")
+![création d'un compte association](media/signup-association.png)
 
+Formulaire pour une association. Vérification de champs non-vides sur login, email, 
+address, phone, nomAssociation et bankAccount. Vérification de la force du password.
 
-![signup](media/signup.png "choix du type de compte")
+\pagebreak
 
+![création d'un compte particulier](media/signup-user.png)
 
-![signup-association](media/signup-association.png "cr�ation d'un compte association")
+Formulaire pour un particulier. Vérification de champs non-vides sur login, email et bankAccount. 
+Vérification de la force du password.
 
+\pagebreak
 
-![signup-user](media/signup-user.png "cr�ation d'un compte particulier")
+![page de dons](media/donation.png)
 
+Possibilité laissé à l'utilisateur de laisser un bref commentaire (< 100 caractères) avec son don
 
-![project](media/project.png "page de pr�sentation d'un projet")
-
-
-![donation](media/donation.png "page de dons")
-
-
+![page de présentation d'un projet](media/project.png)
