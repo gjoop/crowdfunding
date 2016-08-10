@@ -1,130 +1,185 @@
-% Etude préliminaire du projet Greenlight
+% Etude prÃ©liminaire du projet Greenlight
 % Guillaume JOOP
 % 09/08/2016
 
 # Project definition
 
+
 ## Project brief
+
 
 * Objectif global : l'objectif du projet est de concevoir une plate-forme de
 financement participatif permettant a des associations caritatives de proposer
 un espace de dons en ligne
-* Objectif spécifique à l'utilisateur enregistré :
+* Objectif spÃ©cifique Ã  l'utilisateur enregistrÃ© :
     + Administrateurs :
-        - Valider les demandes d'associations aprés vérification de projet
+        - Valider les demandes d'associations aprÃ©s vÃ©rification de projet
 non frauduleux
-        - Valider les promesses aprés vérification de don non farfelu
-        - Elire modérateur
-    + Modérateurs :
-        - Modérer les différentes pages de dons (newsfeed, description, etc)
+        - Valider les promesses aprÃ©s vÃ©rification de don non farfelu
+        - Elire modÃ©rateur
+    + ModÃ©rateurs :
+        - ModÃ©rer les diffÃ©rentes pages de dons (newsfeed, description, etc)
     + Associations :
-        - Mettre en ligne son espace de dons et de le gérer
+        - Mettre en ligne son espace de dons et de le gÃ©rer
         - Communiquer sur l'avancement de son projet a travers un "newsfeed"
-        - Visualiser les différentes promesses de dons effectués
-        - Visualiser les dons déjà enregistrés ainsi que différentes
+        - Visualiser les diffÃ©rentes promesses de dons effectuÃ©s
+        - Visualiser les dons dÃ©jÃ  enregistrÃ©s ainsi que diffÃ©rentes
 statistiques (montant/mois, montant moyen/donation, etc...)
     + Particuliers :
-        - Enregister des infos personelles réutilisable pour de futurs dons
-        - Visualiser les promesses de dons effectuées
-        - Postuler en tant que modérateur
-* Objectif spécifique à l'utilisateur non-enregistré :
-    + Effectuer une promesse de don de manière simple et efficace
+        - Enregister des infos personelles rÃ©utilisable pour de futurs dons
+        - Visualiser les promesses de dons effectuÃ©es
+        - Postuler en tant que modÃ©rateur
+* Objectif spÃ©cifique Ã  l'utilisateur non-enregistrÃ© :
+    + Effectuer une promesse de don de maniÃ¨re simple et efficace
     + Pouvoir s'enregister (association ou particulier)
+
 
 ## Personas
 
-Le site est avant tout destiné aux associations carritative souhaitant proposé
+
+Le site est avant tout destinÃ© aux associations carritative souhaitant proposÃ©
 un espace de dons en ligne, mais aussi ouvert au grand public afin
 d'effectuer ces dons.
 
+
+\pagebreak
+
+
 ## Initial Tech Specs
 
-* Navigateur : Mozilla Firefox, Google Chrome, Microsoft Edge (compatibilité
-Universal Windows Platform espéré)
+
+* Navigateur : Mozilla Firefox, Google Chrome, Microsoft Edge (compatibilitÃ©
+Universal Windows Platform espÃ©rÃ©)
 * Langage de programmation : HTML5, PHP 5.6, CSS3, javascript, SQL, markdown
-* Logiciels utilisés : NetBeans pour le développement web et le versioning,
-xampp pour le déploiement sur serveur et la base de données, pandoc pour la
-conversion du markdown en pdf, MySQL Workbench pour la création du schéma
-entité/association
-* Résolution : utilisation uniquement "desktop" pour commencer, optimisé pour
-des résolutions allant du 800x600 au 1920x1080, au format 4:3 5:4 16:10 et 16:9
-(autre résolutions et formats impossible a tester faute de matériel)
+* Logiciels utilisÃ©s : NetBeans pour le dÃ©veloppement web et le versioning,
+xampp pour le dÃ©ploiement sur serveur et la base de donnÃ©es, pandoc pour la
+conversion du markdown en pdf, MySQL Workbench pour la crÃ©ation du schÃ©ma
+entitÃ©/association
+* RÃ©solution : utilisation uniquement "desktop" pour commencer, optimisÃ© pour
+des rÃ©solutions allant du 800x600 au 1920x1080, au format 4:3 5:4 16:10 et 16:9
+(autre rÃ©solutions et formats impossible a tester faute de matÃ©riel)
+
 
 ## Project Timeline
 
-* Début du projet crowdfunding : 26/07/2016
-* Echéance étude préliminaire : 10/08/2016
-* Echéance projet crowdfunding : 20/09/2016
+
+* DÃ©but du projet crowdfunding : 26/07/2016
+* EchÃ©ance Ã©tude prÃ©liminaire : 10/08/2016
+* EchÃ©ance projet crowdfunding : 20/09/2016
 * Temps total : 8 semaines
-* Temps étude préliminaire : 2 semaines
+* Temps Ã©tude prÃ©liminaire : 2 semaines
 * Temps projet : 6 semaines
 
-| Période                                       | Tâche                                                                 |
+
+| PÃ©riode                                       | TÃ¢che                                                                 |
 |-----------------------------------------------|-----------------------------------------------------------------------|
-| Semaines 1 & 2 (du 26 /07/2016 au 09/08/2016) | Rédaction de l'étude préliminaire ; Mise en place du dépôt GitHub.    |
-| Semaine 3 (du 10/08/2016 au 16/08/2016)       | Création de la base de données.                                       |
+| Semaines 1 & 2 (du 26 /07/2016 au 09/08/2016) | RÃ©daction de l'Ã©tude prÃ©liminaire ; Mise en place du dÃ©pÃ´t GitHub.    |
+| Semaine 3 (du 10/08/2016 au 16/08/2016)       | CrÃ©ation de la base de donnÃ©es.                                       |
 | Semaine 4 (du 17/08/2016 au 22/08/2016)       | Page d'accueil, d'inscription et de connexion.                        |
 | Semaine 5 (du 23/08/2016 au 29/08/2016)       | Page de projet et de don ; CSS.                                       |
 | Semaine 6 (du 30/08/2016 au 05/09/2016)       | Version utilisateur des pages ; CSS.                                  |
-| Semaine 7 (du 06/09/2016 au 12/09/2016)       | Espace administrateur/modérateur ; Test et ajout de fonctionnalitées. |
-| Semaine 8 (du 13/09/2016 au 19/09/2016)       | Test final ; Rédaction du rapport et préparation oral.                |
+| Semaine 7 (du 06/09/2016 au 12/09/2016)       | Espace administrateur/modÃ©rateur ; Test et ajout de fonctionnalitÃ©es. |
+| Semaine 8 (du 13/09/2016 au 19/09/2016)       | Test final ; RÃ©daction du rapport et prÃ©paration oral.                |
+
 
 # Site Structure
 
+
 ## Content/Functionality Outline
 
+
 * Page d'accueil :
-    + Accés à la base de données
-    + Lien vers page de connexion
+    + AccÃ©s Ã  la base de donnÃ©es
+    + Connexion
     + Lien vers page d'inscription
-    + Projet à la une
-    + Projets récents
+    + FAQ
+    + Nous contacter
+    + Projet Ã  la une
+    + Projets rÃ©cents
     + Projets populaires
 * Page d'inscription :
-    + Accés à la base de données
+    + AccÃ©s Ã  la base de donnÃ©es
+    + FAQ
+    + Nous contacter
     + Formulaire :
         - Association :
             + login
             + password
             + e-mail
             + Nom d'association
-            + Numéro d'association
+            + NumÃ©ro d'association
             + Adresse
-            + Numéro de téléphone
+            + NumÃ©ro de tÃ©lÃ©phone
             + Site web (facultatif)
-            + Données bancaires
+            + DonnÃ©es bancaires
         - Particulier :
             + login
             + password
             + email
             + Nom (facultatif)
-            + Prénom (facultatif)
-            + Numéro de téléphone (facultatif)
+            + PrÃ©nom (facultatif)
+            + NumÃ©ro de tÃ©lÃ©phone (facultatif)
             + Adresse (facultatif)
             + Date de naissance (facultatif)
             + Sexe (facultatif)
-            + Données bancaires
-* Page de connexion :
-    + Accés à la base de données
-    + Formulaire :
-        - login
-        - password
+            + DonnÃ©es bancaires
+
+
+\pagebreak
+
+
 * Page de projet :
-    + Accés à la base de données
-    + Un projet sera composé de :
+    + AccÃ©s Ã  la base de donnÃ©es
+    + Connexion
+    + Lien vers page d'inscription
+    + FAQ
+    + Nous contacter
+    + Un projet sera composÃ© de :
         - Un nom
-        - L'association créatrice
-        - Une image/une vidéo de présentation
+        - L'association crÃ©atrice
+        - Une image/une vidÃ©o de prÃ©sentation
         - Une description
         - La date de mise en ligne
         - La somme acquise
-        - Deux flux en temps réel :
-            * Un "newsfeed" alimenté par l'association
-            * Les promesses de dons effectués accompagné du nom d'utilisateur si
-identifié et d'un commentaire facultatif
+        - Deux flux en temps rÃ©el :
+            * Un "newsfeed" alimentÃ© par l'association
+            * Les promesses de dons effectuÃ©s accompagnÃ© du nom d'utilisateur si
+identifiÃ© et d'un commentaire facultatif
     + Les autres projets de l'association et/ou les projets similaires
+* Page de dons :
+    + Accés à la base de données
+    + Connexion
+    + Lien vers page d'inscription
+    + FAQ
+    + Nous contacter
+    + Formulaire :
+        - email
+        - montant du don
+        - données bancaires
+        - pseudo (facultatif)
+        - commentaire court (facultatif)
+
+\pagebreak
 
 
 ## Database Diagram
 
-![Diagramme de la BDD associé à Greenlight](db_diagram.png "Diagramme de la BDD associé à Greenlight")
+
+![Diagramme de la BDD associÃ© Ã  Greenlight](db_diagram.png "Diagramme de la BDD associÃ© Ã  Greenlight")
+
+
+Remarque : La table bankAccount est a protÃ©ger car elle contiendra des infos
+trÃ©s sensible. Peut Ãªtre Ã  placÃ© dans une base Ã  part. Recherche sur la
+sÃ©curisation et le cryptage des donnÃ©es a faire. De plus la double liaison
+à 'idAssociation' ET 'idUser' peut poser des problemes de requêtes...
+
+
+Dans la table 'donation', le champ 'validÃ©' est un boolÃ©en indiquant si la
+promesse de dons a Ã©tÃ© tenue
+
+
+\pagebreak
+
+
+## Wireframe
+
