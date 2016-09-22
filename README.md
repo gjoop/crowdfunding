@@ -1,5 +1,7 @@
-# crowdfunding
-Bienvenue dans le dépôt du projet crowdfunding de technoweb 2016.
+# Crowdfunding
+Bienvenue dans le dÃ©pÃ´t du projet crowdfunding.
 
-Vous trouverez ici les différentes sources du site Greenlight ainsi que l'étude
-préliminaire de celui-ci. (à consulter [ici](etude-preliminaire/etude-preliminaire.pdf "étude préliminaire du projet Greenlight"))
+Vous trouverez ici les diffÃ©rentes sources du site Greenlight ainsi que l'Ã©tude
+prÃ©liminaire de celui-ci. (Ã  consulter [ici](etude-preliminaire/etude-preliminaire.pdf "Ã©tude prÃ©liminaire du projet Greenlight"))
+
+Une prÃ©-release est disponible [ici](https://github.com/gjoop/crowdfunding/releases "Pre-release")
