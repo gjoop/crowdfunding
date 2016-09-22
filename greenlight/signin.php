@@ -10,6 +10,7 @@ if ($_POST['type']=='user') {
     //on vérifie si le login/password correspond
     $user_info->execute(array($_POST['login'], $_POST['password']));
     $info = $user_info->fetch();
+    $user_info->closeCursor();
     if ($info['login'] == $_POST['login']) {
         $_SESSION['login'] = $info['login'];
         $_SESSION['email'] = $info['email'];
@@ -53,6 +54,7 @@ else {
     //vérification login/password
     $association_info->execute(array($_POST['login'], $_POST['password']));
     $info = $association_info->fetch();
+    $association_info->closeCursor();
     if ($info['login'] == $_POST['login']) {
         $_SESSION['login'] = $info['login'];
         $_SESSION['email'] = $info['email'];
