@@ -27,6 +27,8 @@ else {
 </section>
 
 <?php
+    include('./include/footer.php');
+
 }
 
 ?>
