@@ -1,43 +1,54 @@
-<?php include("./include/head.php"); ?>
+<?php
+    include("./include/head.php");
+    include("./include/functions.php");
+    $i=1;
+    $j=1
+?>
 
     <body>
         
-<?php include("./include/header.php"); ?>
-
+<?php include("./include/header.php");?>
 
         <section>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed 
-            non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
-            nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas 
-            ligula massa, varius a, semper congue, euismod non, mi. Proin 
-            porttitor, orci nec nonummy molestie, enim est eleifend mi, non 
-            fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, 
-            scelerisque vitae, consequat in, pretium a, enim. Pellentesque 
-            congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum
-            bibendum augue. Praesent egestas leo in pede. Praesent blandit odio 
-            eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum 
-            ante ipsum primis in faucibus orci luctus et ultrices posuere 
-            cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque 
-            fermentum. Maecenas adipiscing ante non diam sodales hendrerit.Ut 
-            velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut 
-            orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, 
-            ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus 
-            sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. 
-            Integer id felis. Curabitur aliquet pellentesque diam. Integer quis 
-            metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, 
-            consectetuer adipiscing elit. Morbi vel erat non mauris convallis 
-            vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, 
-            convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. 
-            Proin feugiat, augue non elementum posuere, metus purus iaculis 
-            lectus, et tristique ligula justo vitae magna.Aliquam convallis 
-            sollicitudin purus. Praesent aliquam, enim at fermentum mollis, 
-            ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce 
-            vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu 
-            enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit 
-            nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt 
-            tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis 
-            magna fermentum augue, et ultricies lacus lorem varius purus. 
-            Curabitur eu amet.
+            <p>
+                Bienvenue sur notre Plateforme de Crowdfunding (Financement participatif).<br/>
+                Cette plateforme est dédiée aux associations à but non lucratif, pour leurs permettre de récolter des dons et promesses de dons.<br/>
+                Ces dons ou promesses de dons seront soit directement attribués à l’association ou soit dédié à un projet en particulier.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Derniers projets</h2>
+            <p>
+                <?php
+                    $last_project->execute(array());
+                    while($last = $last_project->fetch() AND $i<5) {
+                        echo '<a href="./project.php?id=' .$last['idProjet']. '">' .$last['nom']. '</a> <br/>';
+                        echo $last['description'] .'<br/>';
+                        echo '<a href="./donation_form.php?id=' .$last['idProjet']. '">Faire un don </a> <br/>';
+                        $i++;
+                    }
+                    $last_project->closeCursor();
+                ?>
+            </p>
+            <a href="./project_list.php?sort=last">Afficher plus</a> <br/>
+        </section>
+        
+        <section>
+            <h2>Tous les projets</h2>
+            <p>
+                <?php
+                    $abc_project->execute(array());
+                    while($abc = $abc_project->fetch() AND $j<15) {
+                        echo '<a href="./project.php?id=' .$abc['idProjet']. '">' .$abc['nom']. '</a> <br/>';
+                        echo $abc['description'] .'<br/>';
+                        echo '<a href="./donation_form.php?id=' .$abc['idProjet']. '">Faire un don </a> <br/>';
+                        $j++;
+                    }
+                    $abc_project->closeCursor();
+                ?>
+            </p>
+            <a href="./project_list.php?sort=abc">Afficher plus</a> <br/>
         </section>
 
 <?php include("./include/footer.php"); ?>

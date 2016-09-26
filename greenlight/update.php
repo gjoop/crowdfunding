@@ -31,6 +31,6 @@ else {
     ));
 }
 
-echo '<meta http-equiv="refresh" content="0;URL=profile.php" />';
+echo '<meta http-equiv="refresh" content="0;URL=index.php" />';
 
 ?>

@@ -28,7 +28,7 @@ else {
 
 <?php
     include('./include/footer.php');
-
+    echo '</body>';
 }
 
 ?>

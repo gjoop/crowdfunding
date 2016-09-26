@@ -40,7 +40,7 @@ else {
     $info = $association_info->fetch();
     $association_info->closeCursor();
 ?>
-    <form method="post" action="signup.php">
+    <form method="post" action="update.php">
         <input readonly="readonly" required="required" type="text" name="login" id="login" placeholder="Identifiant" value=<?php echo $info['login'];?> />
         <input required="required" type="password" name="password" id="password" placeholder="Mot de passe" />
         <input required="required" type="text" name="nomAssociation" id="nomAssociation" placeholder="Nom d'association" value=<?php echo $info['nomAssociation'];?> />
