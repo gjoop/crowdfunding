@@ -12,7 +12,7 @@ if ($_POST['type']=='user') {
     $info = $login_user->fetch();
     $login_user->closeCursor();
     if ($info['login'] == $_POST['login']) {
-        $_SESSION['id'] = $info['id'];
+        $_SESSION['idUser'] = $info['idUser'];
         $_SESSION['login'] = $info['login'];
         $_SESSION['email'] = $info['email'];
         $_SESSION['nom'] = $info['nom'];
@@ -57,7 +57,7 @@ else {
     $info = $login_association->fetch();
     $login_association->closeCursor();
     if ($info['login'] == $_POST['login']) {
-        $_SESSION['id'] = $info['id'];
+        $_SESSION['idAssociation'] = $info['idAssociation'];
         $_SESSION['login'] = $info['login'];
         $_SESSION['email'] = $info['email'];
         $_SESSION['nomAssociation'] = $info['nomAssociation'];

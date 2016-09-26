@@ -14,8 +14,8 @@ if ($_SESSION['type']=='user') {
     $user_info->closeCursor();
 ?>
     
-    <form method="post" action="update.php">
-        <input required="required" type="text" name="login" id="login" placeholder="Identifiant" value=<?php echo $info['login'];?> />
+    <form method="post" action="./update.php">
+        <input readonly="readonly" required="required" type="text" name="login" id="login" placeholder="Identifiant" value=<?php echo $info['login'];?> />
         <input required="required" type="password" name="password" id="password" placeholder="Mot de passe"/>
         <input type="text" name="nom" id="nom" placeholder="Nom" value=<?php echo $info['nom'];?> />
         <input type="text" name="prenom" id="prenom" placeholder="Prénom" value=<?php echo $info['prenom'];?> />
@@ -28,6 +28,7 @@ if ($_SESSION['type']=='user') {
         <input type="date" name="birth" id="birth" placeholder="Date de naissance" value=<?php echo $info['birth'];?> />
         <input type="text" name="bankAccount" id="bankAccount" placeholder="Numéro de compte" value=<?php echo $info['bankAccount'];?> />
         <input type="submit" value="Mettre a jour le profil">
+        <input type="submit" formaction="./delete.php" value="Supprimer le profil">
     </form>
     
 <?php
