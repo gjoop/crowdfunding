@@ -8,10 +8,11 @@ include './include/header_alt.php';
 //cas si c'est un particulier
 if ($_POST['type']=='user') {
     //on vérifie si le login/password correspond
-    $user_info->execute(array($_POST['login'], $_POST['password']));
-    $info = $user_info->fetch();
-    $user_info->closeCursor();
+    $login_user->execute(array($_POST['login'], $_POST['password']));
+    $info = $login_user->fetch();
+    $login_user->closeCursor();
     if ($info['login'] == $_POST['login']) {
+        $_SESSION['id'] = $info['id'];
         $_SESSION['login'] = $info['login'];
         $_SESSION['email'] = $info['email'];
         $_SESSION['nom'] = $info['nom'];
@@ -20,10 +21,11 @@ if ($_POST['type']=='user') {
         $_SESSION['sex'] = $info['sex'];
         $_SESSION['address'] = $info['address'];
         $_SESSION['phone'] = $info['phone'];
+        $_SESSION['bankAccount'] = $info['bankAccount'];
         $_SESSION['type'] = $_POST['type'];
 
         //redirection automatique vers l'accueil
-        echo '<meta http-equiv="refresh" content="=0;URL=index.php" />';
+        echo '<meta http-equiv="refresh" content="0;URL=index.php" />';
     }
     
     //si login/password incorrect
@@ -40,7 +42,6 @@ if ($_POST['type']=='user') {
                 <input type="text" name="login" id="login" placeholder="Identifiant" value=<?php echo $_POST['login'] ?> />
                 <input type="password" name="password" id="password" placeholder="Mot de passe" />
                 <input type="submit" value="Connexion">
-                <input type="submit" formaction="reset.php" value="Réinitialiser le mot de passe" >
             </form>
         </section>
 <!--retour en php-->
@@ -52,19 +53,22 @@ if ($_POST['type']=='user') {
 //si c'est une association
 else {
     //vérification login/password
-    $association_info->execute(array($_POST['login'], $_POST['password']));
-    $info = $association_info->fetch();
-    $association_info->closeCursor();
+    $login_association->execute(array($_POST['login'], $_POST['password']));
+    $info = $login_association->fetch();
+    $login_association->closeCursor();
     if ($info['login'] == $_POST['login']) {
+        $_SESSION['id'] = $info['id'];
         $_SESSION['login'] = $info['login'];
         $_SESSION['email'] = $info['email'];
         $_SESSION['nomAssociation'] = $info['nomAssociation'];
         $_SESSION['address'] = $info['address'];
         $_SESSION['website'] = $info['website'];
         $_SESSION['phone'] = $info['phone'];
+        $_SESSION['bankAccount'] = $info['bankAccount'];
+        $_SESSION['type'] = $_POST['type'];
 
         //redirection automatique vers l'accueil
-        echo '<meta http-equiv="refresh" content="=60;URL=index.php" />';
+        echo '<meta http-equiv="refresh" content="0;URL=index.php" />';
     }
     //login/password incorrect
     else {
@@ -80,7 +84,6 @@ else {
                 <input type="text" name="login" id="login" placeholder="Identifiant" value=<?php echo $_POST['login'] ?> />
                 <input type="password" name="password" id="password" placeholder="Mot de passe" />
                 <input type="submit" value="Connexion">
-                <input type="submit" formaction="reset.php" value="Réinitialiser le mot de passe">
             </form>
         </section>
 <!--retour en php-->
