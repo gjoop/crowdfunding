@@ -30,8 +30,11 @@
         //si utilisateur authentifié
     else {
 ?>
-        Bienvenue <a href=./profil.php?type=<?php echo $_SESSION['type'];?>&id=<?php echo $_SESSION['id'];?>><?php echo $_SESSION['login'];?></a>
-        <a href=./signout.php>Déconnexion</a>
+        <section>
+            Bienvenue <a href=./profil.php?type=<?php echo $_SESSION['type'];?>&id=<?php echo $_SESSION['id'];?>><?php echo $_SESSION['login'];?></a>
+            <a href=./signout.php>Déconnexion</a>
+        </section>
+        
 <?php
     }
 ?>

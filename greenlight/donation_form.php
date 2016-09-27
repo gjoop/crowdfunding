@@ -14,7 +14,7 @@ include("./include/functions.php");
     if ($_SESSION['type']=='association') {
         echo'vous ne pouvez pas faire de don en tant qu\'association';
     }
-    }
+
     else {
 ?>
     <form method="post" action="./donation.php">
@@ -22,10 +22,11 @@ include("./include/functions.php");
         <input required="required" hidden="hidden" name="idProjet" id="idProjet" type="number" value=<?php echo $_GET['id'];?> />
         <input type="text" name="comment" id="comment" placeholder="Votre commentaire"/>
         <input type="text" name="montant" id="montant" placeholder="Votre montant"/>
-        <input type="text" name="bankAccount" id="bankAccount" placeholder="Numéro de compte" value=<?php echo $info['bankAccount'];?> />
+        <input type="text" name="bankAccount" id="bankAccount" placeholder="Numéro de compte" value=<?php echo $_SESSION['bankAccount'];?> />
         <input type="submit" value="Valider">
     </form>
 <?php
+}
 }
 include("./include/footer.php");
 echo '</body>';

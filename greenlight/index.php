@@ -25,7 +25,7 @@
                     while($last = $last_project->fetch() AND $i<5) {
                         echo '<a href="./project.php?id=' .$last['idProjet']. '">' .$last['nom']. '</a> <br/>';
                         echo $last['description'] .'<br/>';
-                        echo '<a href="./donation_form.php?id=' .$last['idProjet']. '">Faire un don </a> <br/>';
+                        echo '<a href="./donation_form.php?id=' .$last['idProjet']. '">Faire un don </a> <br/><br/>';
                         $i++;
                     }
                     $last_project->closeCursor();
@@ -42,7 +42,7 @@
                     while($abc = $abc_project->fetch() AND $j<15) {
                         echo '<a href="./project.php?id=' .$abc['idProjet']. '">' .$abc['nom']. '</a> <br/>';
                         echo $abc['description'] .'<br/>';
-                        echo '<a href="./donation_form.php?id=' .$abc['idProjet']. '">Faire un don </a> <br/>';
+                        echo '<a href="./donation_form.php?id=' .$abc['idProjet']. '">Faire un don </a> <br/><br/>';
                         $j++;
                     }
                     $abc_project->closeCursor();

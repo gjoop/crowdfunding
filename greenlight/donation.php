@@ -1,8 +1,13 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+include('./include/head.php');
+include('./include/functions.php');
 
+$new_donation->execute(array(
+    'idUser'=>$_POST['idUser'],
+    'idProjet'=>$_POST['idProjet'],
+    'comment'=>$_POST['comment'],
+    'montant'=>$_POST['montant']
+));
+
+echo '<meta http-equiv="refresh" content="0;URL=index.php" />';

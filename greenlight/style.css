@@ -18,8 +18,19 @@ body {
 
 footer {
     background-color: midnightblue;
+    height: 60px;
+    
+}
+
+footer :link{
+    color :white;
 }
 
 section {
+    text-align: center;
+    font-size: 14pt;
+}
+
+form {
     text-align: center;
 }
