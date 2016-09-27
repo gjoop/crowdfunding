@@ -1,5 +1,5 @@
 % Etude préliminaire du projet Greenlight
-% Guillaume JOOP
+% Guillaume JOOP - Gregory RIPOLL
 % 09/08/2016
 
 # Project definition
